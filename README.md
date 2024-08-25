@@ -73,3 +73,20 @@ order by pp.Player
 
 ## Visualization:
 ![Prem Dashboard](assests/images/Prem_Dashboard.png)
+
+## DAX Measures
+#### Progressive Carries per 90
+```DAX
+PrgC_90s = CALCULATE(SUM(PremStats[PrgC])/SUM(PremStats[_90s]),Filter(PremStats,PremStats[MP] >=10))
+```
+
+#### Progressive Passes per 90
+```DAX
+PrgP_90s = CALCULATE(SUM(PremStats[PrgP])/SUM(PremStats[_90s]),FILTER(PremStats,PremStats[MP] >= 10))
+```
+
+#### Progressive Runs per 90
+```DAX
+PrgR_90s = sum(PremStats[PrgR])/SUM(PremStats[_90s])
+```
+
