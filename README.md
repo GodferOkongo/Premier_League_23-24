@@ -72,4 +72,4 @@ order by pp.Player
 ```
 
 ##Visualization:
-![Prem Dashboard](assets/images/Prem_Dashboard.png)
+![Prem Dashboard](assests/images/Prem_Dashboard.png)
